@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>2003Scape - Runescape by Andrew Gower</title>
+        <title>Runescape - Runescape by Andrew Gower</title>
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
@@ -11,7 +11,7 @@
             <div class="rsc-wrap">
                 <div class="rsc-row">
                     <header class="rsc-box rsc-col rsc-header">
-                        <h1>2003Scape Server & Client</h1>
+                        <h1>RuneScape Server & Client</h1>
                         <a
                             class="rsc-link rsc-small-block rsc-small-spaced"
                             href="https://github.com/2003scape"
@@ -22,28 +22,10 @@
                 <div class="rsc-row">
                     <div>
                         <p>
-                            2003Scape is an archived port of the client and
-                            emulation of Jagex's
-                            <a class="rsc-link" href="https://runescape.com"
-                                >RuneScape</a
-                            >
-                            server written in JavaScript from the year 2003. The
-                            game server can run under
-                            <a class="rsc-link" href="https://nodejs.org/en/"
-                                >Node.js</a
-                            >
-                            or in a browser via
-                            <a
-                                class="rsc-link"
-                                href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API"
-                                >Web Workers</a
-                            >
-                            and
-                            <a
-                                class="rsc-link"
-                                href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API"
-                                >WebRTC</a
-                            >.
+                           Press Start Server, then SIGN UP for an account (You need to do this EVERY TIME YOU REOPEN THE GAME)
+                            Then press Existing User, type in the username and password)
+                            Optional: Press fullscreen to make it big
+                        
                         </p>
                         <p>
                             <strong>Help</strong>:
@@ -87,6 +69,11 @@
                             value="Start Server"
                             autocomplete="off"
                         />
+                          <input
+                            id="client-fullscreen"
+                            type="submit"
+                            value="Toggle Fullscreen"
+                        />
 
                         <br />
                         <br />
@@ -106,7 +93,7 @@
                 </div>
                 <div class="rsc-row" id="client-settings" style="display: none">
                     <fieldset style="background-color: #000; margin: 8px">
-                        <legend>Client Settings</legend>
+                        <legend>Client Settings (nerd stufs)</legend>
 
                         <div>
                             <label for="client-server">
@@ -157,20 +144,16 @@
 
                         <br />
 
-                        <input
-                            id="client-fullscreen"
-                            type="submit"
-                            value="Toggle Fullscreen"
-                        />
+                      
                     </fieldset>
                 </div>
                 <div class="rsc-row" id="webrtc-settings" style="display: none">
                     <fieldset style="background-color: #000; margin: 8px">
-                        <legend>WebRTC Settings</legend>
+                        <legend>Multiplayer Settings</legend>
 
                         <div>
                             <label for="webrtc-offer">
-                                Offer (updates after peer connects):
+                                Key (Give to friend):
                             </label>
                             <input
                                 id="webrtc-offer"
@@ -183,13 +166,14 @@
                         <p>
                             <small>
                                 Paste this offer to a friend if hosting, or
-                                paste your friend's offer and press
+                                paste your friend's key and press
                                 <strong>Join Server</strong> if joining.
+                                This only lasts until you reopen the game.
                             </small>
                         </p>
 
                         <div>
-                            <label for="webrtc-answer">Answer: </label>
+                            <label for="webrtc-answer">Server to join: </label>
                             <input
                                 id="webrtc-answer"
                                 class="rsc-input"
@@ -201,7 +185,7 @@
 
                         <p>
                             <small>
-                                Paste their answer here and press
+                                Paste their key here and press
                                 <strong>Connect Peer</strong> if hosting, or
                                 paste this answer to the host if joining.
                             </small>
@@ -246,15 +230,8 @@
                 </div>
             </div>
             <footer class="rsc-footer">
-                This webpage and its contents is copyright 2003 Jagex Ltd<br /><a
-                    class="rsc-link"
-                    href="https://github.com/2003scape"
-                    >2003scape source code</a
-                >&nbsp;copyright 2021 and licensed under the&nbsp;<a
-                    class="rsc-link"
-                    href="https://www.gnu.org/licenses/agpl-3.0.html"
-                    >AGPL-3.0+</a
-                >
+                This webpage and its contents is copyright 2003 Jagex Ltd<br />
+               
             </footer>
             <div class="rsc-border-bottom rsc-border-bar"></div>
         </div>
